@@ -143,6 +143,7 @@ header ul li:hover .sub-menu {
 
 .logos-slide {
   display: inline-block;
+  width: 1000px;
   -webkit-animation: 35s slide infinite linear;
           animation: 35s slide infinite linear;
 }
