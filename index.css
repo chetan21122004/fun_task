@@ -84,106 +84,49 @@ header ul li:hover .sub-menu {
   border: 1px solid gray;
 }
 
-@-webkit-keyframes slide {
-  from {
-    -webkit-transform: translateX(0);
-            transform: translateX(0);
-  }
-  to {
-    -webkit-transform: translateX(-100%);
-            transform: translateX(-100%);
-  }
-}
-
-@keyframes slide {
-  from {
-    -webkit-transform: translateX(0);
-            transform: translateX(0);
-  }
-  to {
-    -webkit-transform: translateX(-100%);
-            transform: translateX(-100%);
-  }
-}
-
-.logos {
-  overflow: hidden;
-  padding: 6px 0;
-  background: white;
-  white-space: nowrap;
-  position: relative;
-}
-
-.logos:before,
-.logos:after {
-  position: absolute;
-  top: 0;
-  width: 250px;
+.products-section .swiper {
+  width: 100%;
   height: 100%;
-  content: "";
-  z-index: 2;
 }
 
-.logos:before {
-  left: 0;
-  background: -webkit-gradient(linear, right top, left top, from(rgba(255, 255, 255, 0)), to(white));
-  background: linear-gradient(to left, rgba(255, 255, 255, 0), white);
-}
-
-.logos:after {
-  right: 0;
-  background: -webkit-gradient(linear, left top, right top, from(rgba(255, 255, 255, 0)), to(white));
-  background: linear-gradient(to right, rgba(255, 255, 255, 0), white);
-}
-
-.logos:hover {
-  -webkit-animation-play-state: paused;
-          animation-play-state: paused;
-}
-
-.logos-slide {
-  display: inline-block;
-  width: 1100px;
-  -webkit-animation: 20s slide infinite linear;
-          animation: 20s slide infinite linear;
-}
-
-.logos-slide img {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  -webkit-transition: all ease 0.5s;
-  transition: all ease 0.5s;
-  -webkit-box-shadow: 2px 2px 5px gray;
-          box-shadow: 2px 2px 5px gray;
-  height: 100px;
-  border-radius: 4px;
-  margin: 15px;
-}
-
-.logos-slide img:hover {
-  border: 1px solid green;
-}
-
-.logos-slide:hover {
-  -webkit-animation-play-state: paused;
-          animation-play-state: paused;
-}
-
-.swiper-slide {
-  /* text-align: center; */
+.products-section .swiper-slide {
+  text-align: center;
   font-size: 18px;
   background: #fff;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.products-section .swiper-slide img {
+  display: block;
+  width: 300px;
+  height: 250px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.swiper-section .swiper {
+  width: 600px;
+  height: 580px;
+}
+
+.swiper-section .swiper-slide {
+  font-size: 18px;
+  background: #fff;
   width: 500px;
 }
 
-.swiper {
-  width: 600px;
-  height: 580px;
+.footer-section {
+  background-image: url("https://res.cloudinary.com/apcon/image/upload/f_jpg,h_1080,w_1920,c_fill,g_auto,q_auto/v1/assets/pages/solutions/finance/finance-page-header-background-1920w-1080h?_a=AXAH4UZ0");
+  background-size: cover;
+  background-position: center;
+  height: 450px;
 }
 /*# sourceMappingURL=index.css.map */

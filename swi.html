@@ -7,87 +7,125 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
   <!-- Link Swiper's CSS -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <script src="https://cdn.tailwindcss.com"></script>
 
   <!-- Demo styles -->
   <style>
     html,
     body {
-      position: relative;
       height: 100%;
     }
+  
+   .swiper {
+      width: 1300px;
 
-    body {
-      background: #eee;
-      font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
-      font-size: 14px;
-      color: #000;
-      margin: 0;
-      padding: 0;
     }
 
-    .swiper {
-      width: 100%;
-      height: 100%;
-    }
-
-    .swiper-slide {
+   .swiper-slide {
       text-align: center;
       font-size: 18px;
-      background: #fff;
+      height: 130px;
       display: flex;
+      overflow: hidden;
+      border-radius: 4px;
+      box-sizing: border-box;
       justify-content: center;
       align-items: center;
     }
 
+   .swiper-slide:hover{
+  border: 2px  solid green;
+}
     .swiper-slide img {
-      display: block;
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
+    height: 150px;
+    width: 250px;
     }
   </style>
 </head>
 
-<body>
+<body class="h-screen w-screen flex items-center justify-center   ">
   <!-- Swiper -->
-  <div class="swiper mySwiper">
-    <div class="swiper-wrapper">
-      <div class="swiper-slide">Slide 1</div>
-      <div class="swiper-slide">Slide 2</div>
-      <div class="swiper-slide">Slide 3</div>
-      <div class="swiper-slide">Slide 4</div>
-      <div class="swiper-slide">Slide 5</div>
-      <div class="swiper-slide">Slide 6</div>
-      <div class="swiper-slide">Slide 7</div>
-      <div class="swiper-slide">Slide 8</div>
-      <div class="swiper-slide">Slide 9</div>
+   <div class="partner-section flex items-center justify-center  h-96     w-screen bg-blue-300   ">
+
+ <div class="swiper hover-swipe    mySwiper">
+
+    <div class="swiper-wrapper  ">
+      <div class="swiper-slide">
+        <img class="img" src="https://srhworld.com/wp-content/uploads/2022/01/25.jpg" />
+      </div>
+      <div class="swiper-slide">
+        <img class="img" src="https://srhworld.com/wp-content/uploads/2022/01/26.jpg" />
+      </div>
+      <div class="swiper-slide">
+        <img class="img" src="https://srhworld.com/wp-content/uploads/2022/01/27.jpg" />
+      </div>
+      <div class="swiper-slide">
+        <img class="img" src="https://srhworld.com/wp-content/uploads/2022/01/28.jpg" />
+      </div>
+      <div class="swiper-slide">
+        <img class="img" src="https://srhworld.com/wp-content/uploads/2022/01/29.jpg" />
+      </div>
+      <div class="swiper-slide">
+        <img class="img" src="https://srhworld.com/wp-content/uploads/2022/01/29.jpg" />
+      </div>
+      <div class="swiper-slide">
+        <img class="img" src="https://srhworld.com/wp-content/uploads/2022/01/29.jpg" />
+      </div>
+      <div class="swiper-slide">
+        <img class="img" src="https://srhworld.com/wp-content/uploads/2022/01/29.jpg" />
+      </div>
+    
     </div>
-    <div class="swiper-button-next"></div>
-    <div class="swiper-button-prev"></div>
-    <div class="swiper-pagination"></div>
+    
+    <!-- <div class="swiper-pagination"></div> -->
+
   </div>
+</div>
 
   <!-- Swiper JS -->
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
   <!-- Initialize Swiper -->
   <script>
-    var swiper = new Swiper(".mySwiper", {
+    const swiperContainer = document.querySelector('.partner-section .swiper ');
+
+    var swipe = new Swiper( ".partner-section .mySwiper", {
+      slidesPerView: 5,
       spaceBetween: 30,
-      centeredSlides: true,
+      loop: true,
       autoplay: {
-        delay: 2500,
-        disableOnInteraction: false,
+        delay: 1000,
+        disableOnInteraction: false
       },
-      pagination: {
-        el: ".swiper-pagination",
-        clickable: true,
-      },
-      navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
-      },
+      // pagination: {
+      //   el: ".swiper-pagination",
+      //   clickable: true
+      // }
     });
+
+    swiperContainer.addEventListener('mouseover', () => {
+      swipe.autoplay.stop();
+    });
+
+    swiperContainer.addEventListener('mouseout', () => {
+      swipe.autoplay.start();
+    });
+    var swiper1 = new Swiper(".efgsmySwiper", {
+  speed: 600,
+  parallax: true,
+  autoplay: {
+    delay: 4000,
+    disableOnInteraction: true,
+  },
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+});
   </script>
 </body>
 

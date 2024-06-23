@@ -46,7 +46,26 @@
 </div>
 
 <!-- top end  -->
-
+<button
+  type="button"
+  data-twe-ripple-init
+  data-twe-ripple-color="light"
+  class="!fixed bottom-5 end-5 hidden rounded-full bg-red-600 p-3 text-xs font-medium uppercase leading-tight text-white shadow-md transition duration-150 ease-in-out hover:bg-red-700 hover:shadow-lg focus:bg-red-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-red-800 active:shadow-lg"
+  id="btn-back-to-top">
+  <span class="[&>svg]:w-4">
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      fill="none"
+      viewBox="0 0 24 24"
+      stroke-width="3"
+      stroke="currentColor">
+      <path
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        d="M4.5 10.5 12 3m0 0 7.5 7.5M12 3v18" />
+    </svg>
+  </span>
+</button>
 <!-- nav -->
 <header class="main-header ">
     <div class="container mx-auto">
@@ -326,47 +345,51 @@
 </div>
 </div>
 
-<div class=" flex flex-col h-96 bg-blue-100">
 
-  <div class="heading-products font-bold text-4xl h-5 m-4 text-black ">
-    Our Partners
-  </div>
-<div class="partner-section flex items-center justify-center  h-72    ">
+
+<div class="partner-section h-96 flex items-center  justify-center flex-col w-screen bg-blue-100">
+ <!-- Swiper -->
+ |  <div class="swiper  mySwiper swipe  mySwipe">
+  <div class="swiper-wrapper">
+    <div class="swiper-slide">
+      <img class="img" src="https://srhworld.com/wp-content/uploads/2022/01/25.jpg" />
+      
+ </div>  
+    <div class="swiper-slide">
+      <img class="img" src="https://srhworld.com/wp-content/uploads/2022/01/26.jpg" />
+      
+ </div>  
+    <div class="swiper-slide">
+      <img class="img" src="https://srhworld.com/wp-content/uploads/2022/01/27.jpg" />
+      
+ </div>  
+    <div class="swiper-slide">
+      <img class="img" src="https://srhworld.com/wp-content/uploads/2022/01/28.jpg" />
+      
+ </div>  
+    <div class="swiper-slide">
+      <img class="img" src="https://srhworld.com/wp-content/uploads/2022/01/29.jpg" />
+      
+ </div>  
+    <div class="swiper-slide">
+      <img class="img" src="https://srhworld.com/wp-content/uploads/2022/01/30.jpg" />
+      
+ </div>  
+    <div class="swiper-slide">
+      <img class="img" src="https://srhworld.com/wp-content/uploads/2022/01/31.jpg" />
+      
+ </div>  
+    <div class="swiper-slide">
+      <img class="img" src="https://srhworld.com/wp-content/uploads/2022/01/32.jpg" />
+      
+ </div>  
   
-  <div class="swiper hover-swipe    mySwiper">
- 
-     <div class="swiper-wrapper  ">
-       <div class="swiper-slide">
-         <img class="img" src="https://srhworld.com/wp-content/uploads/2022/01/25.jpg" />
-       </div>
-       <div class="swiper-slide">
-         <img class="img" src="https://srhworld.com/wp-content/uploads/2022/01/26.jpg" />
-       </div>
-       <div class="swiper-slide">
-         <img class="img" src="https://srhworld.com/wp-content/uploads/2022/01/27.jpg" />
-       </div>
-       <div class="swiper-slide">
-         <img class="img" src="https://srhworld.com/wp-content/uploads/2022/01/28.jpg" />
-       </div>
-       <div class="swiper-slide">
-         <img class="img" src="https://srhworld.com/wp-content/uploads/2022/01/29.jpg" />
-       </div>
-       <div class="swiper-slide">
-         <img class="img" src="https://srhworld.com/wp-content/uploads/2022/01/29.jpg" />
-       </div>
-       <div class="swiper-slide">
-         <img class="img" src="https://srhworld.com/wp-content/uploads/2022/01/29.jpg" />
-       </div>
-       <div class="swiper-slide">
-         <img class="img" src="https://srhworld.com/wp-content/uploads/2022/01/29.jpg" />
-       </div>
-     
-     </div>
-     
-     <!-- <div class="swiper-pagination"></div> -->
- 
-   </div>
- </div>
+  </div>
+  <!-- <div class="swiper-pagination"></div> -->
+</div>
+  
+    
+
 </div>
 
 
@@ -430,9 +453,7 @@
 
 
 <div class="swiper-section w-full  my-4 h-full">
-  <div class="heading-products font-bold text-4xl h-5 m-4 text-black ">
-    Latest News
-  </div>
+
 <div class="swiper  border-2 border-gray-300  mx-auto my-3   mySwiper">
   <div class="swiper-wrapper  mb-4">
     
@@ -546,3 +567,49 @@
 
 
 
+
+
+<div class="partner-section h-96 flex items-center  justify-center flex-col w-screen bg-blue-100">
+  <!-- Swiper -->
+    <div class="swiper  mySwiper swipe  mySwipe">
+   <div class="swiper-wrapper">
+     <div class="swiper-slide">
+       <img class="img" src="https://srhworld.com/wp-content/uploads/2022/01/25.jpg" />
+       
+  </div>  
+     <div class="swiper-slide">
+       <img class="img" src="https://srhworld.com/wp-content/uploads/2022/01/26.jpg" />
+       
+  </div>  
+     <div class="swiper-slide">
+       <img class="img" src="https://srhworld.com/wp-content/uploads/2022/01/27.jpg" />
+       
+  </div>  
+     <div class="swiper-slide">
+       <img class="img" src="https://srhworld.com/wp-content/uploads/2022/01/28.jpg" />
+       
+  </div>  
+     <div class="swiper-slide">
+       <img class="img" src="https://srhworld.com/wp-content/uploads/2022/01/29.jpg" />
+       
+  </div>  
+     <div class="swiper-slide">
+       <img class="img" src="https://srhworld.com/wp-content/uploads/2022/01/30.jpg" />
+       
+  </div>  
+     <div class="swiper-slide">
+       <img class="img" src="https://srhworld.com/wp-content/uploads/2022/01/31.jpg" />
+       
+  </div>  
+     <div class="swiper-slide">
+       <img class="img" src="https://srhworld.com/wp-content/uploads/2022/01/32.jpg" />
+       
+  </div>  
+   
+   </div>
+   <!-- <div class="swiper-pagination"></div> -->
+ </div>
+   
+     
+ 
+ </div>
