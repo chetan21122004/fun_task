@@ -46,6 +46,14 @@
 
 
 
+document.addEventListener('DOMContentLoaded', function() {
+  const menuButton = document.getElementById('menuButton');
+  const sideMenu = document.getElementById('sideMenu');
+
+  menuButton.addEventListener('click', function() {
+      sideMenu.classList.toggle('show');
+  });
+});
 
 
 
@@ -71,7 +79,19 @@ var swiper1 = new Swiper(".swiper-section .mySwiper", {
 const swiperContaine = document.querySelector(' .swiper ');
 
 var swipe = new Swiper( ".partner-section .mySwiper", {
-  slidesPerView: 5,
+  breakpoints: {
+    0: {
+      slidesPerView: 1,
+    },
+    640: {
+      slidesPerView: 2,
+    },
+    768: {
+      slidesPerView: 3,
+    },
+    1024: {
+      slidesPerView: 5,
+      }},
   spaceBetween: 30,
   loop: true,
   autoplay: {

@@ -14,10 +14,10 @@
     
 
 </head>
-<body class="bg-gray-100 p-0 m-0">
+<body class="bg-gray-100 overflow-x-hidden p-0 m-0">
   
 <!-- Top bar  -->
-<div id="header_topbar" class="   bg-blue-900 text-white  md:block">
+<div id="header_topbar " class="hidden   bg-blue-900 text-white  md:block">
     <div class="container mx-auto  ">
         <div class="flex justify-around items-center">
             <!-- contact info -->   
@@ -48,7 +48,7 @@
 <!-- top end  -->
 
 <!-- nav -->
-<header class="main-header ">
+<header class="main-header md:block hidden ">
     <div class="container mx-auto">
       <div class="flex justify-around text-black font-bold items-center ">
         <div id="site-logo" class="flex p-4 items-center">
@@ -78,7 +78,7 @@
               </li>
               <ul>
               <li class="menu-item text-black">
-                <a href="#" class="inline-block p-3 hover:text-green-500" >Products</a>
+                <a href="#" class="inline-block p-3 hover:text-green-500" >Products <i class="fa-solid fa-sort-down"></i></a>
                 <ul class="sub-menu border-t-2 shadow-md border-green-500 w-64">
                 <li class="sub-menu-item border-t-0 "><a href="http://srhworld.com/service/equities/">Equities</a></li>
                 <li class="sub-menu-item "><a href="http://srhworld.com/service/mutual-funds/">Mutual Funds</a></li>
@@ -111,7 +111,7 @@
 <ul>
 
               <li class="menu-item text-black">
-                <a href="#" class="flex items-center p-3">Other Services <i class="fa-solid fa-sort-down"></i></a>
+                <a href="#" class="flex items-center p-3">Other Services <i class="fa-solid mx-1 fa-sort-down"> </i></a>
                 <ul class="sub-menu border-t-2 shadow-md border-green-500 w-52">
                   <li class="sub-menu-item border-t-0"><a  href="https://srhworld.com/loans/">Loans</a></li>
                   <li class="sub-menu-item"><a  href="https://srhworld.com/msme-and-sme/">MSME and SME Loans</a></li>
@@ -122,7 +122,7 @@
 <ul>
 
               <li class="menu-item text-black">
-                <a href="#" class="flex items-center p-3">Knowledge Center <i class="fa-solid fa-sort-down"></i></a>
+                <a href="#" class="flex items-center p-3">Knowledge Center <i class="fa-solid mx-1 fa-sort-down"></i></a>
                 <ul class="sub-menu border-t-2 shadow-md border-green-500 w-52 ">
                   <li class="sub-menu-item border-t-0" ><a href="#">Blogs</a></li>
                   <li class="sub-menu-item"><a href="https://srhworld.com/news/">News</a></li>
@@ -154,20 +154,102 @@
       </div>
     </div>
   </header>
-<div class="hero-section w-full flex items-center justify-evenly  bg-blue-100">
 
-<div class="hero-content w-2/6 gap-7 flex flex-col">
+
+  <!-- <div class="header-small">
+    <div class="header_mobile md:hidden block ">
+      <div class="mlogo_wrapper clearfix">
+            <div class="mobile_logo">
+                <a href="https://srhworld.com/"><img src="http://srhworld.com/wp-content/uploads/2021/12/SRH-PNG-01.png" alt="Shree Renuka Holdings"></a>
+          </div>
+            <div id="mmenu_toggle" class="">
+              <button fdprocessedid="dq7dp"></button>
+          </div>
+        </div>
+        <div class="mmenu_wrapper">		
+        <div class="mobile_nav collapse" style="display: none;">
+          <ul id="menu-temp-menu" class="mobile_mainmenu"><li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2128"><a href="https://srhworld.com/about-us/">About Us</a></li>
+    <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-2181"><span class="arrow"><i class="fa fa-plus"></i></span><a href="#">Products</a>
+    <ul class="sub-menu">
+      <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2084"><a href="http://srhworld.com/service/equities/">Equities</a></li>
+      <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2085"><a href="http://srhworld.com/service/mutual-funds/">Mutual Funds</a></li>
+      <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2636"><a href="http://srhworld.com/service/alternative-investment-funds-aifs/">Alternative Investment Funds (AIFs)</a></li>
+      <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2164"><a href="http://srhworld.com/service/bonds/">Bonds</a></li>
+      <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2168"><a href="http://srhworld.com/service/non-convertible-debentures-ncd/">Non-Convertible Debentures (NCD)</a></li>
+      <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2172"><a href="http://srhworld.com/service/unlisted-stocks/">Unlisted Stocks</a></li>
+      <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2088"><a href="http://srhworld.com/service/insurance/">Insurance</a></li>
+      <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2086"><a href="http://srhworld.com/service/fixed-income-securities/">Fixed Income Securities</a></li>
+      <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2176"><a href="http://srhworld.com/service/offer-for-sale-ofs/">Offer For Sale (OFS)</a></li>
+      <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2178"><a href="http://srhworld.com/service/new-fund-offerings-nfo/">New Fund Offerings (NFO)</a></li>
+      <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2180"><a href="http://srhworld.com/service/initial-public-offerings-ipo/">Initial Public Offerings (IPO)</a></li>
+    </ul>
+    </li>
+    <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-2227"><span class="arrow"><i class="fa fa-plus"></i></span><a href="#">Services</a>
+    <ul class="sub-menu">
+      <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2232"><a href="https://srhworld.com/customized-portfolio-management-services-pms/">Customized Portfolio Management Services (PMS)</a></li>
+      <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2235"><a href="https://srhworld.com/technical-stock-analysis/">Technical Stock Analysis</a></li>
+      <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2230"><a href="https://srhworld.com/fundamental-stock-analysis/">Fundamental Stock Analysis</a></li>
+      <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2229"><a href="https://srhworld.com/derivative-analysis/">Derivative Analysis</a></li>
+      <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2228"><a href="https://srhworld.com/block-deals/">Block Deals</a></li>
+    </ul>
+    </li>
+    <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-2341"><span class="arrow"><i class="fa fa-plus"></i></span><a href="#">Other Services</a>
+    <ul class="sub-menu">
+      <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2550"><a href="https://srhworld.com/loans/">Loans</a></li>
+      <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2786"><a href="https://srhworld.com/msme-and-sme/">MSME and SME Loans</a></li>
+      <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2089"><a href="#">Real Estate</a></li>
+    </ul>
+    </li>
+    <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-2090"><span class="arrow"><i class="fa fa-plus"></i></span><a href="#">Knowledge Center</a>
+    <ul class="sub-menu">
+      <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2561"><a href="#">Blogs</a></li>
+      <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2706"><a href="https://srhworld.com/news/">News</a></li>
+      <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2562"><a href="#">Media and Events</a></li>
+    </ul>
+    </li>
+    <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2129"><a href="https://srhworld.com/contact-us/">Contact Us</a></li>
+    </ul>		</div>   	
+        </div>
+    </div>
+  </div> -->
+
+
+  <div class="header-small h-max  py-3 md:hidden block">
+    <div class="header_mobile ">
+        <div class="mlogo_wrapper flex justify-around  clearfix">
+            <div class="mobile_logo">
+                <a href="https://srhworld.com/"><img src="http://srhworld.com/wp-content/uploads/2021/12/SRH-PNG-01.png" alt="Shree Renuka Holdings"></a>
+            </div>
+            <div id="mmenu_toggle" class="">
+                <button id="menuButton" class=" text-2xl"><i class="fa-solid fa-bars"></i></button>
+            </div>
+        </div>
+        <div class="mmenu_wrapper" id="sideMenu">
+            <div class="mobile_nav collapse">
+                <ul id="menu-temp-menu" class="mobile_mainmenu">
+                    <!-- Menu items here -->
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+  <div class="hero-section sm:flex-row flex-col w-full flex items-center justify-evenly  bg-blue-100">
+    <div class="img rounded-md md:hidden relative top-5 m-3 block ">
+      <img  class="rounded-md" src="https://srhworld.com/wp-content/uploads/2022/01/02-Equities.jpg" width="500px" alt="">
+    </div>
+<div class="hero-content sm:w-2/6  p-6 gap-7 flex flex-col">
   <p class="font-bold  text-6xl text-blue-800">Equities</p>
   <p> nisi corporis, aspernatur itaque natus architecto nemo dolorum eligendi assumenda cum doloribus! Dignissimos quis nisi commodi!</p>
-  <button class="p-4 relative top-14 bg-orange-500 font-bold w-44 rounded-md text-white">Read more</button>
+  <button class="p-4 relative md:top-14 bg-orange-500 font-bold w-44 rounded-md text-white">Read more</button>
 </div>
-<div class="img rounded-md ">
+<div class="img rounded-md hidden md:block">
   <img  class="rounded-md" src="https://srhworld.com/wp-content/uploads/2022/01/02-Equities.jpg" width="500px" alt="">
 </div>
 </div>
  
-<div class="hero-btm  h-64 flex justify-center ">
-  <div class="cards hover:shadow-2xl h-64 gap-1 justify-start flex flex-col shadow m-4 relative p-6 bg-white rounded bottom-16  w-64">
+<div class="hero-btm  h-max sm:h-64 items-center flex sm:flex-row flex-col relative  justify-center ">
+  <div class="cards hover:shadow-2xl h-64 gap-1 justify-start flex flex-col shadow m-4 relative p-6 bg-white rounded md:bottom-16  w-64">
 <div class="img">
   <img src="https://srhworld.com/wp-content/uploads/2022/01/equity.png" width="60px" alt="">
 </div>
@@ -175,7 +257,7 @@
 <p class="text-sm"> nisi corporis, aspernatur itaque natus architecto nemo dolor! Dignissimos quis nisi commodi!</p>
 <button class="  border-b w-max border-gray-400 text-gray-400  ">Read more</button>
 </div>
-  <div class="cards hover:shadow-2xl h-64 gap-1 justify-start flex flex-col shadow m-4 relative p-6 bg-white rounded bottom-16  w-64">
+  <div class="cards hover:shadow-2xl h-64 gap-1 justify-start flex flex-col shadow m-4 relative p-6 bg-white rounded md:bottom-16  w-64">
 <div class="img">
   <img src="https://srhworld.com/wp-content/uploads/2022/01/equity.png" width="60px" alt="">
 </div>
@@ -183,7 +265,7 @@
 <p class="text-sm"> nisi corporis, aspernatur itaque natus architecto nemo dolor! Dignissimos quis nisi commodi!</p>
 <button class="  border-b w-max border-gray-400 text-gray-400  ">Read more</button>
 </div>
-  <div class="cards hover:shadow-2xl h-64 gap-1 justify-start flex flex-col shadow m-4 relative p-6 bg-white rounded bottom-16  w-64">
+  <div class="cards hover:shadow-2xl h-64 gap-1 justify-start flex flex-col shadow m-4 relative p-6 bg-white rounded md:bottom-16  w-64">
 <div class="img">
   <img src="https://srhworld.com/wp-content/uploads/2022/01/equity.png" width="60px" alt="">
 </div>
@@ -191,7 +273,7 @@
 <p class="text-sm"> nisi corporis, aspernatur itaque natus architecto nemo dolor! Dignissimos quis nisi commodi!</p>
 <button class="  border-b w-max border-gray-400 text-gray-400  ">Read more</button>
 </div>
-  <div class="cards hover:shadow-2xl h-64 gap-1 justify-start flex flex-col shadow m-4 relative p-6 bg-white rounded bottom-16  w-64">
+  <div class="cards hover:shadow-2xl h-64 gap-1 justify-start flex flex-col shadow m-4 relative p-6 bg-white rounded md:bottom-16  w-64">
 <div class="img">
   <img src="https://srhworld.com/wp-content/uploads/2022/01/equity.png" width="60px" alt="">
 </div>
@@ -201,12 +283,12 @@
 </div>
 </div>
 
-<div class="intro-section shadow-md flex items-center justify-center w-screen">
-  <div class="h-4/5 w-2/3  flex  ">
+<div class="intro-section h-max py-6 shadow-md flex items-center justify-center w-screen">
+  <div class="sm:h-4/5  sm:w-2/3 w-11/12 sm:flex-row flex-col flex  ">
     <div class="img">
       <img src="./handshake.png" width="554 x" alt="">
     </div>
-    <div class="h-full w-2/4 bg-blue-900 flex flex-col justify-center  gap-5 p-3 pl-12 text-white">  
+    <div class="h-full  sm:w-2/4 w-full bg-blue-900 flex flex-col justify-center  gap-5 p-3 pl-12 text-white">  
 
       <p class="font-bold text-sm  text-gray-400">WHO WE ARE</p>
       <div class="text-4xl font-bold"><p>Shree Renuka</p>
@@ -220,11 +302,11 @@
   </div>
 </div>
 
-<div class="  bg-blue-100 p-5 services-section">
-<div class="services-container flex    flex-col">
-  <div class="font-bold text-4xl  relative h-max  left-48 w-max m-6 text-black">Our Services</div>
-  <div class="services-cards flex flex-wrap relative top-8 m-5 p-7 items-center justify-center ">
-    <div class="cards  hover:shadow-2xl  h-72 gap-4 justify-start flex flex-col shadow m-4 relative p-6 bg-white rounded bottom-16  w-80">
+<div class="  bg-blue-100 sm:h-full h-max services-section">
+<div class="services-container flex  sm:h-full  flex-col">
+  <div class="font-bold text-4xl  relative h-max  sm:left-48 w-max m-6 text-black">Our Services</div>
+  <div class="services-cards flex sm:h-max flex-wrap relative top-8 sm:m-5 sm:p-7 items-center justify-center ">
+    <div class="cards   hover:shadow-2xl  h-72 gap-4 justify-start flex flex-col shadow m-4 relative sm:w p-6 bg-white rounded bottom-16  w-80">
       <div class="img">
         <img src="https://srhworld.com/wp-content/uploads/2022/01/portfolio.png" width="60px" alt="">
       </div>
@@ -232,7 +314,7 @@
       <p class="text-sm"> Selecting the right financial advisor is an important decision based on trust…</p>
       <h1 class=" read font-bold  border-b w-max    border-gray-400 text-gray-400  ">Read more</h1>
       </div>
-    <div class="cards  hover:shadow-2xl  h-72 gap-4 justify-start flex flex-col shadow m-4 relative p-6 bg-white rounded bottom-16  w-80">
+    <div class="cards   hover:shadow-2xl  h-72 gap-4 justify-start flex flex-col shadow m-4 relative sm:w p-6 bg-white rounded bottom-16  w-80">
       <div class="img">
         <img src="https://srhworld.com/wp-content/uploads/2022/01/portfolio.png" width="60px" alt="">
       </div>
@@ -240,7 +322,7 @@
       <p class="text-sm"> Selecting the right financial advisor is an important decision based on trust…</p>
       <h1 class=" read font-bold  border-b w-max    border-gray-400 text-gray-400  ">Read more</h1>
       </div>
-    <div class="cards  hover:shadow-2xl  h-72 gap-4 justify-start flex flex-col shadow m-4 relative p-6 bg-white rounded bottom-16  w-80">
+    <div class="cards   hover:shadow-2xl  h-72 gap-4 justify-start flex flex-col shadow m-4 relative sm:w p-6 bg-white rounded bottom-16  w-80">
       <div class="img">
         <img src="https://srhworld.com/wp-content/uploads/2022/01/portfolio.png" width="60px" alt="">
       </div>
@@ -248,7 +330,7 @@
       <p class="text-sm"> Selecting the right financial advisor is an important decision based on trust…</p>
       <h1 class=" read font-bold  border-b w-max    border-gray-400 text-gray-400  ">Read more</h1>
       </div>
-    <div class="cards  hover:shadow-2xl  h-72 gap-4 justify-start flex flex-col shadow m-4 relative p-6 bg-white rounded bottom-16  w-80">
+    <div class="cards   hover:shadow-2xl  h-72 gap-4 justify-start flex flex-col shadow m-4 relative sm:w p-6 bg-white rounded bottom-16  w-80">
       <div class="img">
         <img src="https://srhworld.com/wp-content/uploads/2022/01/portfolio.png" width="60px" alt="">
       </div>
@@ -256,7 +338,7 @@
       <p class="text-sm"> Selecting the right financial advisor is an important decision based on trust…</p>
       <h1 class=" read font-bold  border-b w-max    border-gray-400 text-gray-400  ">Read more</h1>
       </div>
-    <div class="cards  hover:shadow-2xl  h-72 gap-4 justify-start flex flex-col shadow m-4 relative p-6 bg-white rounded bottom-16  w-80">
+    <div class="cards   hover:shadow-2xl  h-72 gap-4 justify-start flex flex-col shadow m-4 relative sm:w p-6 bg-white rounded bottom-16  w-80">
       <div class="img">
         <img src="https://srhworld.com/wp-content/uploads/2022/01/portfolio.png" width="60px" alt="">
       </div>
@@ -264,7 +346,7 @@
       <p class="text-sm"> Selecting the right financial advisor is an important decision based on trust…</p>
       <h1 class=" read font-bold  border-b w-max    border-gray-400 text-gray-400  ">Read more</h1>
       </div>
-    <div class="cards  hover:shadow-2xl  h-72 gap-4 justify-start flex flex-col shadow m-4 relative p-6 bg-white rounded bottom-16  w-80">
+    <div class="cards   hover:shadow-2xl  h-72 gap-4 justify-start flex flex-col shadow m-4 relative sm:w p-6 bg-white rounded bottom-16  w-80">
       <div class="img">
         <img src="https://srhworld.com/wp-content/uploads/2022/01/portfolio.png" width="60px" alt="">
       </div>
@@ -277,13 +359,13 @@
   </div>
 </div>
 
-<div class="products-section  flex items-center border-none  justify-center px-10 flex-col p-5">
-  <div class="  m-6">
+<div class="products-section  flex  items-center h-max sm:h-full border-none  justify-center  ">
+  <div class="  ">
 
 <div class="heading-products font-bold text-4xl h-5 m-4 text-black ">
   Our Products
 </div>
-<div class="product-cards flex justify-center   mt-4">
+<div class="product-cards  flex-col flex sm:flex-row justify-center   mt-4">
   <div class="cards hover:shadow-2xl h-72 w-72  gap-1  justify-start flex flex-col shadow m-4 mt-8  p-9 bg-white rounded   ">
     <div class="img">
       <img src="https://srhworld.com/wp-content/uploads/2022/01/02-ncd.png" width="65px" alt="">
@@ -326,12 +408,12 @@
 </div>
 </div>
 
-<div class=" flex flex-col h-96 bg-blue-100">
+<div class=" parntner flex flex-col h-96 bg-blue-100">
 
   <div class="heading-products font-bold text-4xl h-5 m-4 text-black ">
     Our Partners
   </div>
-<div class="partner-section flex items-center justify-center  h-72    ">
+<div class="partner-section flex items-center justify-center relative left-2  h-72    ">
   
   <div class="swiper hover-swipe    mySwiper">
  
@@ -371,31 +453,31 @@
 
 
 <div class="callback-section overflow-hidden h-96 w-screen" style="background-image: url('https://img.freepik.com/premium-vector/stock-market-economic-graph-with-diagrams-business-financial-concepts-reports-abstract-technology-communication-concept-background_29865-1321.jpg'); background-size: cover; background-position: center;">
-  <div class="callback-content flex  justify-between p-14">
-    <div class="m-8 font-bold text-4xl h-5  text-white">
+  <div class="callback-content flex-col sm:flex-row flex ml-3 space-y-20  justify-between sm:p-14">
+    <div class="m-8 ml-0 font-bold  text-4xl h-5  text-white">
       <p>Get a</p>
       <p>Call Back</p>
     </div>
-    <div class=" w-1/3 m-10 mr-16">
+    <div class=" sm:w-1/3 m-10  mr-16 ml-0">
       
-          <form class="" >
+          <form class=" space-y-6" >
             <div class=" flex flex-col gap-4">
               <div class="flex gap-4">
 
               <div  class=" " >
-                <input type="text" class=" block w-64  p-2 border border-gray-300 rounded-sm"  placeholder="Name" required>
+                <input type="text" class=" block sm:w-64  w-40 p-2 border border-gray-300 rounded-sm"  placeholder="Name" required>
               </div>
               <div  class=" " >
-                <input type="email" id=""  class="  block w-64 p-2 border border-gray-300 rounded-sm"  placeholder="Email" required>
+                <input type="email" id=""  class="  block w-40 sm:w-64 p-2 border border-gray-300 rounded-sm"  placeholder="Email" required>
               </div>
             </div>
             <div class="flex gap-4">
 
               <div id="" class="  " >
-                <input type="tel" id="" class=" block w-64 p-2 border border-gray-300 rounded-sm"  placeholder="Phone / Mobile" required>
+                <input type="tel" id="" class=" block sm:w-64 w-40  p-2 border border-gray-300 rounded-sm"  placeholder="Phone / Mobile" required>
               </div>
               <div id="" class=" " >
-                <select id="" class=" block w-64  p-2 border border-gray-300 rounded-sm" required>
+                <select id="" class=" block sm:w-64 w-40  p-2 border border-gray-300 rounded-sm" required>
                   <option value=""   class=" ">Select Products or Services</option>
                   <option value="Equities">Equities</option>
                   <option value="Mutual Funds">Mutual Funds</option>
@@ -419,7 +501,7 @@
 
             </div>
             <div class=" mt-4">
-              <button type="submit" class=" bg-white text-gray-600 font-bold px-4 py-2 rounded-md" >Request a Call Back</button>
+              <button type="submit" class=" bg-white text-gray-600 font-bold p-2 h-max rounded-md" >Request a Call Back</button>
             </div>
           </form>
         
@@ -429,32 +511,32 @@
 </div>
 
 
-<div class="swiper-section w-full  my-4 h-full">
+<div class="swiper-section w-full overflow-hidden my-4 h-full">
   <div class="heading-products font-bold text-4xl h-5 m-4 text-black ">
     Latest News
   </div>
-<div class="swiper  border-2 border-gray-300  mx-auto my-3   mySwiper">
+<div class="swiper  border-2 border-gray-300   my-3   mySwiper">
   <div class="swiper-wrapper  mb-4">
     
-    <div class="swiper-slide  px-2 py-1 ">
+    <!-- <div class="swiper-slide  sm:px-2 py-1 ">
       <div class="img ">
         <img src="https://srhworld.com/wp-content/uploads/2023/12/shutterstock_1272601168-800x450-1-650x351.jpg"  alt="">
       </div>
       <div class="swiper-content flex flex-col gap-3 py-4">
         <p class="text-sm text-gray-400">December 1, 2024 | <span class="font-bold text-blue-500">News</span></p>
-        <p class=" pr-6 text-3xl text-black font-bold">Tata Technologies IPO: GMP Jumps. Share may hit four-digit on listing date</p>
+        <p class=" pr-6  sm:text-3xl text-2xl text-black font-bold">Tata Technologies IPO: GMP Jumps. Share may hit four-digit on listing date</p>
         <p class="text-base text-gray-400">Tata Technologies IPO:&nbsp;Listing date of the initial public offering (IPO) of Tata Technologies Ltd has...</p>
     <button class="  border-b w-max font-bold text-sm border-gray-400 text-gray-500  ">Read more</button>
 
       </div>
-    </div>
-    <div class="swiper-slide  px-2 py-1 ">
+    </div> -->
+    <div class="swiper-slide h-max sm:px-2 py-1 ">
       <div class="img ">
         <img src="https://srhworld.com/wp-content/uploads/2023/12/imageedit_1_6042266410-650x351.jpg"  alt="">
       </div>
-      <div class="swiper-content flex flex-col gap-3 py-4">
+      <div class="swiper-content flex flex-col gap-3 h-max flex-wrap w-80 py-4">
         <p class="text-sm text-gray-400">December 1, 2024 | <span class="font-bold text-blue-500">News</span></p>
-        <p class=" pr-6 text-3xl text-black font-bold">Tata Technologies IPO: GMP Jumps. Share may hit four-digit on listing date</p>
+        <p class=" pr-6  sm:text-3xl text-2xl text-black font-bold">Tata Technologies IPO: GMP Jumps. Share may hit four-digit on listing date</p>
         <p class="text-base text-gray-400">Tata Technologies IPO:&nbsp;Listing date of the initial public offering (IPO) of Tata Technologies Ltd has...</p>
     <button class="  border-b w-max font-bold text-sm border-gray-400 text-gray-500  ">Read more</button>
 
@@ -473,7 +555,8 @@
 </div>
 
 
-<div class="footer-section flex justify-evenly pt-28  w-screen" >
+
+<div class="footer-section overflow-hidden flex justify-evenly pt-28  sm:flex-row h-max  flex-col  " >
   
 <div class="footer-logos  flex flex-col gap-6 justify-center items-center  p-4 w-max h-max">
   <div class="srh-img">
@@ -531,15 +614,15 @@
 
 </div>
 
-<div class="footer h-12 w-screen bg-blue-950 ">
-<p class="text-sm text-gray-400 py-3 relative left-28">
-  © 2022 Shree Renuka Holdings – For Sustainable Growth</p>
+<div class="footer h-12   w-full  overflow-hidden bg-blue-950 ">
+<p class="text-sm text-gray-400 w-full py-3 flex flex-wrap relative sm:left-28">
+  ©2022 Shree Renuka Holdings – For Sustainable Growth</p>
 </div>
 
+</body>
 <script defer src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js">
   
 </script>
-</body>
 <script src="index.js" defer ></script>
 
 </html>

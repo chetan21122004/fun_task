@@ -1,11 +1,12 @@
 body {
-  transition: all ease 0.5s;
   margin: 0;
   padding: 0;
   overflow-y: scroll; /* Allow vertical scrolling */
   overflow-x: hidden;
 }
-
+*{
+  transition: all ease 0.5s;
+}
 body::-webkit-scrollbar {
   width: 0;
 }
@@ -60,21 +61,20 @@ header ul li:hover .sub-menu {
   transition: all ease 0.5s;
 }
 
-.services-cards .cards:hover {
+.services-cards{
+ 
+  .cards:hover {
   background: rgb(2, 2, 134);
   color: #fff;
   p {
     color: #fff;
+    .read {
+      color: green;
+    }
   }
 }
-
-.services-cards .cards:hover p {
-  color: #fff;
 }
 
-.services-cards .cards:hover .read {
-  color: green;
-}
 
 .products-section {
   height: 450px;
