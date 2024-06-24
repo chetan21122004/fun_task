@@ -51,6 +51,9 @@ header ul li:hover .sub-menu {
 
 .intro-section {
   height: 622px;
+  .intro-div{
+    width: 160vh;
+  }
 }
 
 .services-section {
@@ -62,7 +65,9 @@ header ul li:hover .sub-menu {
 }
 
 .services-cards{
- 
+  .cards{
+    width: 345px;
+  }
   .cards:hover {
   background: rgb(2, 2, 134);
   color: #fff;
@@ -93,7 +98,6 @@ height: 100px;
     .swiper-slide {
       text-align: center;
       font-size: 18px;
-      height: 13px;
       display: flex;
       overflow: hidden;
       border-radius: 4px;

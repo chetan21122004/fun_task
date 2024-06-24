@@ -1,11 +1,14 @@
 body {
-  -webkit-transition: all ease 0.5s;
-  transition: all ease 0.5s;
   margin: 0;
   padding: 0;
   overflow-y: scroll;
   /* Allow vertical scrolling */
   overflow-x: hidden;
+}
+
+* {
+  -webkit-transition: all ease 0.5s;
+  transition: all ease 0.5s;
 }
 
 body::-webkit-scrollbar {
@@ -57,6 +60,10 @@ header ul li:hover .sub-menu {
   height: 622px;
 }
 
+.intro-section .intro-div {
+  width: 160vh;
+}
+
 .services-section {
   height: 125vh;
 }
@@ -64,6 +71,10 @@ header ul li:hover .sub-menu {
 .cards {
   -webkit-transition: all ease 0.5s;
   transition: all ease 0.5s;
+}
+
+.services-cards .cards {
+  width: 345px;
 }
 
 .services-cards .cards:hover {
@@ -75,7 +86,7 @@ header ul li:hover .sub-menu {
   color: #fff;
 }
 
-.services-cards .cards:hover .read {
+.services-cards .cards:hover p .read {
   color: green;
 }
 
@@ -84,18 +95,26 @@ header ul li:hover .sub-menu {
   border: 1px solid gray;
 }
 
-.products-section .swiper {
-  width: 100%;
-  height: 100%;
+.partner-section {
+  width: 1200px;
+  padding: 10px;
 }
 
-.products-section .swiper-slide {
+.partner-section .swiper {
+  width: 1200px;
+  height: 100px;
+}
+
+.partner-section .swiper .swiper-slide {
   text-align: center;
   font-size: 18px;
-  background: #fff;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  overflow: hidden;
+  border-radius: 4px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -104,23 +123,13 @@ header ul li:hover .sub-menu {
           align-items: center;
 }
 
-.products-section .swiper-slide img {
-  display: block;
-  width: 300px;
-  height: 250px;
-  -o-object-fit: cover;
-     object-fit: cover;
+.partner-section .swiper .swiper-slide:hover {
+  border: 2px solid green;
 }
 
-.swiper-section .swiper {
-  width: 600px;
-  height: 580px;
-}
-
-.swiper-section .swiper-slide {
-  font-size: 18px;
-  background: #fff;
-  width: 500px;
+.partner-section .swiper .swiper-slide img {
+  height: 150px;
+  width: 250px;
 }
 
 .footer-section {
